@@ -1,4 +1,4 @@
-﻿namespace SocketClient
+﻿namespace PosClient
 {
     partial class FrmMain
     {

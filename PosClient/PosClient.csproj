@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{F0BC2E84-A8AC-48C5-BAEB-F8E0A4F44CEB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>SocketClient</RootNamespace>
-    <AssemblyName>SocketClient</AssemblyName>
+    <RootNamespace>PosClient</RootNamespace>
+    <AssemblyName>PosClient</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

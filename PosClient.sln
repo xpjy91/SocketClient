@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketClient", "PosClient\SocketClient.csproj", "{F0BC2E84-A8AC-48C5-BAEB-F8E0A4F44CEB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PosClient", "PosClient\PosClient.csproj", "{F0BC2E84-A8AC-48C5-BAEB-F8E0A4F44CEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
