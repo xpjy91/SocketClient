@@ -17,7 +17,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PosClient
+namespace SocketClient
 {
     class ClsLog
     {

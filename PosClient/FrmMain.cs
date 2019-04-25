@@ -12,7 +12,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PosClient
+namespace SocketClient
 {
     public partial class FrmMain : Form
     {
