@@ -83,6 +83,7 @@ namespace PosClient
             }
         }
 
+        //온라인체크
         private void btnDummy_Click(object sender, EventArgs e)
         {
             String sInput = null;
@@ -99,11 +100,40 @@ namespace PosClient
             }
         }
 
+        //거래저장
         private void btnTran_Click(object sender, EventArgs e)
         {
             try
             {
                 TestTranData();
+                SocketProcess();
+            }
+            catch (Exception ex)
+            {
+                ClsLog.WriteLog(ClsLog.LOG_EXCEPTION, System.Reflection.MethodBase.GetCurrentMethod().Name, ex.Message);
+            }
+        }
+
+        //운영정보조회
+        private void btnOperInq_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                txtInput.Text = "000101PS02000001000100010001201904240000000101000100010001201904242019042417463410000010";
+                SocketProcess();
+            }
+            catch (Exception ex)
+            {
+                ClsLog.WriteLog(ClsLog.LOG_EXCEPTION, System.Reflection.MethodBase.GetCurrentMethod().Name, ex.Message);
+            }
+        }
+
+        //거래로그조회
+        private void btnTranInq_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                txtInput.Text = "000101PS02000001000100010001201904240000000101000100010001201904242019042417463410000030";
                 SocketProcess();
             }
             catch (Exception ex)
@@ -324,7 +354,7 @@ namespace PosClient
                                                 /*
                                                  * PLU 조회 요청 (15)
                                                  */
-                                  "10"  +                           //아이템ID (2) - 10:운영INQ,20:PLU INQ,30:TRAN INQ
+                                  "20"  +                           //아이템ID (2) - 10:운영INQ,20:PLU INQ,30:TRAN INQ
                                   "0000000000001"                   //PLU코드 (13)
                                                                     //-------------------------------
 
@@ -343,5 +373,6 @@ namespace PosClient
             return self.Remove(position, newValue.Length).Insert(position, newValue);
         }
 
+       
     }
 }

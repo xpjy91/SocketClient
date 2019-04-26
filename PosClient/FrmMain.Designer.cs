@@ -36,6 +36,8 @@
             this.txtView = new System.Windows.Forms.TextBox();
             this.lblView = new System.Windows.Forms.Label();
             this.btnDummy = new System.Windows.Forms.Button();
+            this.btnOperInq = new System.Windows.Forms.Button();
+            this.btnTranInq = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtInput
@@ -68,9 +70,9 @@
             this.btnInq.Location = new System.Drawing.Point(9, 143);
             this.btnInq.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnInq.Name = "btnInq";
-            this.btnInq.Size = new System.Drawing.Size(96, 60);
+            this.btnInq.Size = new System.Drawing.Size(116, 60);
             this.btnInq.TabIndex = 50;
-            this.btnInq.Text = "INQ";
+            this.btnInq.Text = "PLU\r\nINQ";
             this.btnInq.UseVisualStyleBackColor = false;
             this.btnInq.Click += new System.EventHandler(this.btnInq_Click);
             // 
@@ -80,10 +82,10 @@
             this.btnTran.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnTran.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTran.ForeColor = System.Drawing.Color.Black;
-            this.btnTran.Location = new System.Drawing.Point(111, 143);
+            this.btnTran.Location = new System.Drawing.Point(9, 211);
             this.btnTran.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTran.Name = "btnTran";
-            this.btnTran.Size = new System.Drawing.Size(96, 60);
+            this.btnTran.Size = new System.Drawing.Size(116, 60);
             this.btnTran.TabIndex = 51;
             this.btnTran.Text = "TRAN";
             this.btnTran.UseVisualStyleBackColor = false;
@@ -95,10 +97,10 @@
             this.btnClear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.Black;
-            this.btnClear.Location = new System.Drawing.Point(412, 143);
+            this.btnClear.Location = new System.Drawing.Point(375, 143);
             this.btnClear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(96, 60);
+            this.btnClear.Size = new System.Drawing.Size(133, 128);
             this.btnClear.TabIndex = 53;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
@@ -131,20 +133,52 @@
             this.btnDummy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnDummy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDummy.ForeColor = System.Drawing.Color.Black;
-            this.btnDummy.Location = new System.Drawing.Point(213, 143);
+            this.btnDummy.Location = new System.Drawing.Point(131, 211);
             this.btnDummy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDummy.Name = "btnDummy";
-            this.btnDummy.Size = new System.Drawing.Size(96, 60);
+            this.btnDummy.Size = new System.Drawing.Size(116, 60);
             this.btnDummy.TabIndex = 56;
-            this.btnDummy.Text = "TEST";
+            this.btnDummy.Text = "DUMMY";
             this.btnDummy.UseVisualStyleBackColor = false;
             this.btnDummy.Click += new System.EventHandler(this.btnDummy_Click);
+            // 
+            // btnOperInq
+            // 
+            this.btnOperInq.BackColor = System.Drawing.SystemColors.Control;
+            this.btnOperInq.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnOperInq.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOperInq.ForeColor = System.Drawing.Color.Black;
+            this.btnOperInq.Location = new System.Drawing.Point(131, 143);
+            this.btnOperInq.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnOperInq.Name = "btnOperInq";
+            this.btnOperInq.Size = new System.Drawing.Size(116, 60);
+            this.btnOperInq.TabIndex = 57;
+            this.btnOperInq.Text = "OPER INQ";
+            this.btnOperInq.UseVisualStyleBackColor = false;
+            this.btnOperInq.Click += new System.EventHandler(this.btnOperInq_Click);
+            // 
+            // btnTranInq
+            // 
+            this.btnTranInq.BackColor = System.Drawing.SystemColors.Control;
+            this.btnTranInq.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnTranInq.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTranInq.ForeColor = System.Drawing.Color.Black;
+            this.btnTranInq.Location = new System.Drawing.Point(253, 143);
+            this.btnTranInq.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnTranInq.Name = "btnTranInq";
+            this.btnTranInq.Size = new System.Drawing.Size(116, 60);
+            this.btnTranInq.TabIndex = 58;
+            this.btnTranInq.Text = "TRAN INQ";
+            this.btnTranInq.UseVisualStyleBackColor = false;
+            this.btnTranInq.Click += new System.EventHandler(this.btnTranInq_Click);
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(535, 223);
+            this.ClientSize = new System.Drawing.Size(535, 279);
+            this.Controls.Add(this.btnTranInq);
+            this.Controls.Add(this.btnOperInq);
             this.Controls.Add(this.btnDummy);
             this.Controls.Add(this.lblView);
             this.Controls.Add(this.txtView);
@@ -171,6 +205,8 @@
         public System.Windows.Forms.TextBox txtView;
         private System.Windows.Forms.Label lblView;
         private System.Windows.Forms.Button btnDummy;
+        private System.Windows.Forms.Button btnOperInq;
+        private System.Windows.Forms.Button btnTranInq;
     }
 }
 
