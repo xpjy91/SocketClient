@@ -48,7 +48,7 @@ namespace PosClient
             byte[] receiveBuffer = new byte[1024];
             try
             {
-                ip = IPAddress.Parse("192.168.1.161");//인자값 : 서버측 IP
+                ip = IPAddress.Parse("127.0.0.1");//인자값 : 서버측 IP
                 endPoint = new IPEndPoint(ip, 8000);//인자값 : IPAddress,포트번호
 
                 //2. Tcp Socket 생성
