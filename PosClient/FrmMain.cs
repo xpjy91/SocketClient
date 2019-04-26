@@ -48,6 +48,7 @@ namespace PosClient
             byte[] receiveBuffer = new byte[1024];
             try
             {
+                //1. 종단점 설정
                 ip = IPAddress.Parse("127.0.0.1");//인자값 : 서버측 IP
                 endPoint = new IPEndPoint(ip, 8000);//인자값 : IPAddress,포트번호
 
