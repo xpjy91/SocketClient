@@ -57,8 +57,8 @@ namespace PosClient
         /// <param name="sMsg"></param>
         public static void WriteLog(int iStatus, string sName, string sMsg)
         {
-            string sFilePath = @"C:\Unibiz\Project\교육\SOKET\Log\" + DateTime.Now.ToString("yyyy-MM-dd") + "_Client.log";
-            string sDirPath = @"C:\Unibiz\Project\교육\SOKET\Log";
+            string sFilePath = @"C:\Unibiz\Project\교육\SOCKET\Log\" + DateTime.Now.ToString("yyyy-MM-dd") + "_Client.log";
+            string sDirPath = @"C:\Unibiz\Project\교육\SOCKET\Log";
 
             string sTemp = "";
             string sStatus = "";
