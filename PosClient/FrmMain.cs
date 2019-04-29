@@ -70,7 +70,7 @@ namespace PosClient
 
                 //8. 디코딩&출력&서비스처리
                 sRevData = Encoding.UTF8.GetString(receiveBuffer, 0, iLength);
-                //Console.WriteLine("받은 데이터 : " + sRevData.Substring(40));
+                Console.WriteLine("받은 데이터 : " + sRevData);
                 txtView.Clear();
                 txtView.Text = sRevData;
 
